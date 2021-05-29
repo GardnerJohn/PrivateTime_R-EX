@@ -3,7 +3,7 @@ import Main from './components/MainComponent';
 import { BrowserRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import './App.css';
-// import './styles/Styles.scss';
+import './styles/Styles.scss';
 
 const App = () => {
 	return (
