@@ -1,17 +1,13 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Main from './components/MainComponent';
-import { BrowserRouter } from 'react-router-dom';
-import { Provider } from 'react-redux';
 import './App.css';
-import './styles/Styles.scss';
+import { Header } from './components/HeaderComponents';
 
 const App = () => {
 	return (
-		<BrowserRouter>
-			<Fragment>
-				<Main />
-			</Fragment>
-		</BrowserRouter>
+		<div className="App">
+			<Header />
+		</div>
 	);
 };
 
