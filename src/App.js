@@ -1,14 +1,21 @@
 import React from "react";
-import "./App.css";
-import Header from "./components/Header/Header";
-import NavBar from "./components/Navbar/NavBar";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+import GlobalStyle from "./globalStyles";
+// import { Navbar, Footer } from "./components";
 
 const App = () => {
   return (
-    <div className="App">
-      <Header />
-      <NavBar />
-    </div>
+    <Router>
+      <GlobalStyle />
+      <ScrollToTop />
+      <Switch>
+        {/* <Route path="/" exact comonent={Home} /> */}
+        {/* <Route path='about' component={about} /> */}
+        {/* <Route path='contact' component={contact} /> */}
+      </Switch>
+      {/* <Footer /> */}
+    </Router>
   );
 };
 
